@@ -1,0 +1,353 @@
+{
+ "schema_version": "1.0",
+ "created": "2026-11-22T04:00:00",
+ "id": "fix-and-flip-reel",
+ "brief": {
+  "prompt": "Reel de 30 s en español sobre fix and flip para Angel Corredera Real Estate: casa deteriorada, renovación, casa terminada, cierre con marca y teléfono.",
+  "kind": "ad",
+  "length_s": 30,
+  "aspect": "9:16",
+  "fps": 24,
+  "style": "cinematic warm real estate commercial, South Florida, worn-to-bright transformation, wine red and gold brand accents, 35mm film still",
+  "audio": {
+   "narration": true,
+   "music": true,
+   "sfx": false,
+   "lip_sync": false,
+   "music_file": null,
+   "language": "es"
+  },
+  "captions": "burned",
+  "deliverables": [
+   "9:16"
+  ],
+  "commercial_use": true,
+  "defaults_used": [
+   "length_s 30",
+   "aspect 9:16 (Reels/TikTok)",
+   "fps 24",
+   "captions burned (vertical)",
+   "target google_colab L4 (no local GPU)",
+   "no real before/after photos: all AI-generated",
+   "commercial_use true (business promo)",
+   "sfx off (t5-base download URL unresolved); music + voiceover only"
+  ]
+ },
+ "target": {
+  "kind": "google_colab",
+  "url": "",
+  "gpu": "L4",
+  "vram_gb": 24,
+  "budget": {
+   "max_gpu_minutes": 60,
+   "max_credits": null,
+   "credit_unit": "compute units",
+   "deadline_minutes": null
+  }
+ },
+ "tier": "standard",
+ "tier_reason": "Google Colab L4 (24 GB) fits standard; 60 GPU-min budget",
+ "caps": {
+  "still_retries": 2,
+  "still_variants": 1,
+  "video_retries": 1,
+  "continuity_regens": 1,
+  "max_renders": 40,
+  "max_gpu_minutes": 60,
+  "pass_mean": 3.5,
+  "pass_min": 3
+ },
+ "gates": {
+  "bible": "human",
+  "plan": "human",
+  "spend": "human",
+  "final": "human"
+ },
+ "stages": {
+  "intake": "done",
+  "preflight": "pending",
+  "bible": "done",
+  "plan": "done",
+  "stills": "pending",
+  "video": "pending",
+  "continuity": "pending",
+  "audio": "pending",
+  "post": "pending",
+  "assembly": "pending",
+  "critique": "pending"
+ },
+ "bible": {
+  "path": "bible.md",
+  "logline": "Una casa olvidada en el sur de Florida se convierte en un hogar luminoso: así funciona un fix and flip, con Angel Corredera.",
+  "cast": [
+   {
+    "id": "house",
+    "descriptor": "single-story 1970s South Florida ranch house, cream stucco walls, terracotta barrel-tile roof, white-framed windows, small covered front porch with two columns, concrete driveway, one royal palm in the front yard",
+    "ref_image": null,
+    "seed": null
+   },
+   {
+    "id": "kitchen",
+    "descriptor": "small galley kitchen with a window over the sink on the back wall, L-shaped counter on the left, refrigerator nook on the right",
+    "ref_image": null,
+    "seed": null
+   }
+  ],
+  "style": "warm cinematic real estate, worn-to-bright, wine red #8B1520 and gold #D6B26A accents",
+  "lut": "warm_film.cube",
+  "voice": "confident warm male Spanish (Latin American) narrator, friendly and clear"
+ },
+ "shots": [
+  {
+   "id": "s01",
+   "beat": "1 hook",
+   "start_s": 0.0,
+   "duration_s": 4,
+   "type": "establishing",
+   "framing": "wide",
+   "camera": "slow push-in",
+   "cast": [
+    "house"
+   ],
+   "location": "exterior",
+   "narration": "¿Quieres ganar dinero en bienes raíces? Te explico el fix and flip.",
+   "sfx": null,
+   "chain_from": null,
+   "transition_in": "cut",
+   "still": {
+    "route": "still.klein",
+    "status": "pending",
+    "prompt": "Cinematic real estate photo, vertical 9:16 frame, 35mm film still, warm natural light, South Florida. Wide shot from the sidewalk of a run-down single-story 1970s South Florida ranch house, cream stucco walls, terracotta barrel-tile roof, white-framed windows, small covered front porch with two columns, concrete driveway, one royal palm in the front yard: faded peeling paint, stained stucco, one cracked window, overgrown brown lawn, weeds in the driveway cracks, tired overcast afternoon light. House centered, no people, no house numbers, no text.",
+    "seed": null
+   },
+   "video": {
+    "route": "video.i2v",
+    "status": "pending",
+    "prompt": "Slow push-in toward the front door. Weeds sway gently in a light breeze; a few dry leaves blow across the driveway.",
+    "seed": null
+   },
+   "status": "pending",
+   "extra": []
+  },
+  {
+   "id": "s02",
+   "beat": "2 compra",
+   "start_s": 4.0,
+   "duration_s": 4,
+   "type": "broll",
+   "framing": "medium wide",
+   "camera": "slow pan right",
+   "cast": [
+    "kitchen"
+   ],
+   "location": "kitchen",
+   "narration": "Paso uno: compras una casa que necesita trabajo, por debajo del precio del mercado.",
+   "sfx": null,
+   "chain_from": null,
+   "transition_in": "cut",
+   "still": {
+    "route": "still.klein",
+    "status": "pending",
+    "prompt": "Cinematic real estate photo, vertical 9:16 frame, 35mm film still, warm natural light, South Florida. Interior of a dated small galley kitchen with a window over the sink on the back wall, L-shaped counter on the left, refrigerator nook on the right: dark worn oak cabinets with missing handles, yellowed laminate countertops, old almond-colored appliances, cracked beige floor tiles, dim fluorescent light, dusty window. No people, no text.",
+    "seed": null
+   },
+   "video": {
+    "route": "video.i2v",
+    "status": "pending",
+    "prompt": "Slow pan right across the old kitchen. Dust particles float in the window light.",
+    "seed": null
+   },
+   "status": "pending",
+   "extra": []
+  },
+  {
+   "id": "s03",
+   "beat": "3 renovación",
+   "start_s": 8.0,
+   "duration_s": 5,
+   "type": "action",
+   "framing": "close-up",
+   "camera": "handheld drift",
+   "cast": [
+    "kitchen"
+   ],
+   "location": "kitchen",
+   "narration": "Paso dos: la renuevas. Cocina, baños, pintura y pisos.",
+   "sfx": null,
+   "chain_from": null,
+   "transition_in": "cut",
+   "still": {
+    "route": "still.klein",
+    "status": "pending",
+    "prompt": "Cinematic real estate photo, vertical 9:16 frame, 35mm film still, warm natural light, South Florida. Close-up of renovation work inside the small galley kitchen with a window over the sink on the back wall, L-shaped counter on the left, refrigerator nook on the right: gloved hands of a worker rolling fresh white paint on a wall, ladder, drop cloths, new wood-look vinyl floor planks stacked on the floor, bright work light. Hands only, no faces, no text.",
+    "seed": null
+   },
+   "video": {
+    "route": "video.i2v",
+    "status": "pending",
+    "prompt": "Gentle handheld drift. The paint roller moves up the wall leaving a fresh white stripe; fine dust drifts in the light.",
+    "seed": null
+   },
+   "status": "pending",
+   "extra": []
+  },
+  {
+   "id": "s04",
+   "beat": "4 transformación",
+   "start_s": 13.0,
+   "duration_s": 5,
+   "type": "transition",
+   "framing": "medium wide",
+   "camera": "static locked-off",
+   "cast": [
+    "kitchen"
+   ],
+   "location": "kitchen",
+   "narration": "Paso tres: la vendes a su nuevo valor.",
+   "sfx": null,
+   "chain_from": "s02",
+   "transition_in": "cut",
+   "still": {
+    "route": "still.klein",
+    "status": "pending",
+    "prompt": "Cinematic real estate photo, vertical 9:16 frame, 35mm film still, warm natural light, South Florida. Interior of the same small galley kitchen with a window over the sink on the back wall, L-shaped counter on the left, refrigerator nook on the right, fully renovated: white shaker cabinets with brass handles, white quartz countertops, stainless steel appliances, light wood-look floors, pendant lights, bright sunlight through the window, a bowl of green apples on the counter. No people, no text.",
+    "seed": null
+   },
+   "video": {
+    "route": "video.i2v_se",
+    "status": "pending",
+    "prompt": "Static camera. The old worn kitchen transforms smoothly into the bright renovated kitchen: cabinets turn white, floors brighten, lights switch on.",
+    "seed": null
+   },
+   "status": "pending",
+   "extra": []
+  },
+  {
+   "id": "s05",
+   "beat": "5 resultado",
+   "start_s": 18.0,
+   "duration_s": 4,
+   "type": "establishing",
+   "framing": "wide",
+   "camera": "slow dolly-in",
+   "cast": [
+    "house"
+   ],
+   "location": "exterior",
+   "narration": "La ganancia está en comprar bien y renovar con inteligencia.",
+   "sfx": null,
+   "chain_from": null,
+   "transition_in": "cut",
+   "still": {
+    "route": "still.klein",
+    "status": "pending",
+    "prompt": "Cinematic real estate photo, vertical 9:16 frame, 35mm film still, warm natural light, South Florida. Wide shot from the sidewalk of the same single-story 1970s South Florida ranch house, cream stucco walls, terracotta barrel-tile roof, white-framed windows, small covered front porch with two columns, concrete driveway, one royal palm in the front yard, fully renovated: fresh bright white stucco, new dark gray front door, new windows, lush green lawn, tropical plants, clean paver driveway, warm golden-hour sunset light, blue sky. House centered, no people, no house numbers, no text.",
+    "seed": null
+   },
+   "video": {
+    "route": "video.i2v",
+    "status": "pending",
+    "prompt": "Slow dolly-in toward the house. Palm fronds sway; warm sunset light glows on the fresh walls.",
+    "seed": null
+   },
+   "status": "pending",
+   "extra": []
+  },
+  {
+   "id": "s06",
+   "beat": "6 venta",
+   "start_s": 22.0,
+   "duration_s": 4,
+   "type": "insert",
+   "framing": "close-up",
+   "camera": "static locked-off",
+   "cast": [
+    "house"
+   ],
+   "location": "exterior",
+   "narration": "Yo te ayudo a encontrar la propiedad correcta.",
+   "sfx": null,
+   "chain_from": null,
+   "transition_in": "cut",
+   "still": {
+    "route": "still.klein",
+    "status": "pending",
+    "prompt": "Cinematic real estate photo, vertical 9:16 frame, 35mm film still, warm natural light, South Florida. Close-up of a hand holding out a set of new house keys toward the camera in front of the renovated single-story 1970s South Florida ranch house, cream stucco walls, terracotta barrel-tile roof, white-framed windows, small covered front porch with two columns, concrete driveway, one royal palm in the front yard at golden hour, background softly out of focus. Only the hand visible, no faces, no text, no signs.",
+    "seed": null
+   },
+   "video": {
+    "route": "video.i2v",
+    "status": "pending",
+    "prompt": "Static camera. The hand gently lifts the keys toward the camera; the keys catch the sunlight.",
+    "seed": null
+   },
+   "status": "pending",
+   "extra": []
+  },
+  {
+   "id": "s07",
+   "beat": "7 cierre marca",
+   "start_s": 26.0,
+   "duration_s": 4,
+   "type": "title",
+   "framing": "wide",
+   "camera": "static locked-off",
+   "cast": [],
+   "location": "end card",
+   "narration": "Angel Corredera, el realtor de tu familia. Llama al siete ocho seis, tres cero nueve, cero dos uno cero.",
+   "sfx": null,
+   "chain_from": null,
+   "transition_in": "cut",
+   "still": {
+    "route": "still.klein",
+    "status": "pending",
+    "prompt": "Elegant dark background for a title card, vertical 9:16: deep charcoal black with a soft wine-red glow at the bottom and subtle warm gold bokeh lights drifting, luxurious and minimal, empty space, no text, no logos, no objects.",
+    "seed": null
+   },
+   "video": {
+    "route": "video.i2v",
+    "status": "pending",
+    "prompt": "Static camera. Gold bokeh lights drift slowly upward; the wine-red glow pulses softly.",
+    "seed": null
+   },
+   "status": "pending",
+   "extra": []
+  }
+ ],
+ "audio": {
+  "voiceover": {
+   "route": "audio.voice",
+   "status": "pending",
+   "params": {
+    "language": "es"
+   },
+   "seed": 7
+  },
+  "music": {
+   "route": "audio.music",
+   "status": "pending",
+   "params": {
+    "tags": "uplifting modern latin pop instrumental, light percussion, warm piano, motivational, 105 bpm, no vocals",
+    "lyrics": "[instrumental]"
+   }
+  },
+  "sfx": []
+ },
+ "post": [],
+ "assembly": {
+  "status": "pending",
+  "xfade": 0.3,
+  "beats_file": null,
+  "captions": "burned",
+  "exports": [],
+  "output": null
+ },
+ "cost": {
+  "renders": 0,
+  "estimate_gpu_minutes": null,
+  "actual_gpu_minutes": 0,
+  "rates_s_per_render": {},
+  "rates_note": "unverified assumptions"
+ },
+ "log": []
+}
