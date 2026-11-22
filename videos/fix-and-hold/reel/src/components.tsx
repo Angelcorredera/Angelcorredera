@@ -200,12 +200,13 @@ export const SafeColumn: React.FC<{ children: React.ReactNode; justify?: React.C
   children,
   justify = "center",
 }) => (
-  <AbsoluteFill
+  <div
     style={{
+      position: "absolute",
       top: 285,
-      bottom: 1920 - 1635,
+      height: 1635 - 285,
       left: 80,
-      right: 80,
+      width: 1080 - 160,
       display: "flex",
       flexDirection: "column",
       justifyContent: justify,
@@ -216,7 +217,7 @@ export const SafeColumn: React.FC<{ children: React.ReactNode; justify?: React.C
     }}
   >
     {children}
-  </AbsoluteFill>
+  </div>
 );
 
 export const Headline: React.FC<{ children: React.ReactNode; size?: number; color?: string }> = ({

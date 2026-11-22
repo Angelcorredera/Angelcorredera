@@ -21,8 +21,8 @@ export const HookScene: React.FC = () => (
           style={{
             fontFamily: SANS,
             fontWeight: 900,
-            fontSize: 150,
-            letterSpacing: "0.02em",
+            fontSize: 128,
+            letterSpacing: "0.01em",
             color: C.gold,
             textShadow: "0 10px 50px rgba(214,178,106,0.35)",
           }}
